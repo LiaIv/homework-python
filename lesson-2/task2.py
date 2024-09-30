@@ -1,5 +1,5 @@
 def input_name(sex):
-    sex_text = {'female': 'девушки', 'male': 'парня'}.get(sex, '')
+    sex_text = {'female': 'девушки', 'male': 'парня'}.get(sex)
     names = []
 
     while True:
