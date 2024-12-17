@@ -7,7 +7,7 @@ def process_client_data(csv_path):
         clients_df = pd.read_csv(csv_path)
         print("Файл успешно загружен.")
 
-        clients_df.columns = clients_df.columns.str.strip().str.lower()  # Приведение заголовков к нижнему регистру
+        clients_df.columns = clients_df.columns.str.strip().str.lower()
         required_cols = {"name", "device_type", "browser", "sex", "age", "bill", "region"}
         missing_cols = required_cols - set(clients_df.columns)
         if missing_cols:
