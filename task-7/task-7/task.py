@@ -4,10 +4,10 @@ from datetime import datetime
 
 class ClientDataProcessor:
     device_translation = {
-        "mobile": "с мобильного браузера",
-        "tablet": "с браузера планшета",
-        "laptop": "с браузера ноутбука",
-        "desktop": "с браузера настольного компьютера"
+        "mobile": "с мобильного ",
+        "tablet": "с браузера ",
+        "laptop": "с браузера ",
+        "desktop": "с настольного компьютера"
     }
 
     def __init__(self, csv_path):
